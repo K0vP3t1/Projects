@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+    <title>Formák</title>
+  </head>
+  <body>
+    <div class="container">
+        <h1 class="text-center">Mini Project:</h1>
+    <p>
+      When the button is clicked, it increases or decreases the value in the selected form by 1, depending on whether the
+      which of the radio buttons is checked.
+    </p>
+    <form id="shapes">
+      <select class="form-control" name="selectedShape">
+        <option value="circle">Circle</option>
+        <option value="square" selected="selected">Square</option>
+        <option value="rectangle">Rectangle</option>
+      </select>
+      <br />
+      <label class="radio-inline me-5">
+        <span class="fa fa-plus"></span>
+        <input type="radio" name="action" value="increment" checked="checked" />
+      </label>
+      <label class="radio-inline">
+        <span class="fa fa-minus"></span>
+        <input type="radio" name="action" value="decrement" />
+      </label>
+      <br />
+      <br />
+      <button type="submit" class="btn btn-primary d-inline-block">Submit</button>
+    </form>
+    <br />
+    <div class="w-100" id="bodies">
+      <div id="sh-circle" class="center d-inline-block">0</div>
+      <div id="sh-square" class="center d-inline-block">0</div>
+      <div id="sh-rectangle" class="center d-inline-block">0</div>
+    </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
