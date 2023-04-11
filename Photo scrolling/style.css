@@ -1,0 +1,35 @@
+
+.to-right {
+  position: relative;
+  right: 0%;
+  transform: translateX(100%); 
+  -webkit-transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+
+.from-left {
+  position: relative;
+  left: -100%;
+  transform: translateX(100%); 
+  -webkit-transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+
+.to-left {
+  position: relative;
+  left: 0%;
+  transform: translateX(-100%); 
+  -webkit-transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+
+.from-right {
+  position: relative;
+  left: 100%;
+  transform: translateX(-100%); 
+  -webkit-transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+}
